@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+import "./App.scss";
+import "./Themes/buffer/styles.scss";
+import Greatfrontend from "./components/Pages/greatfrontend";
+import { Route, Routes } from "react-router";
+import { BrowserRouter as Router } from "react-router-dom";
+import Carousel from "./components/Carousel/Carousel";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="buffer">
+      <Router>
+        <Routes>
+          <Route path={"/"} element={<Greatfrontend />} />
+          <Route path={"/carousel"} element={<Carousel />} />
+        </Routes>
+      </Router>
     </div>
   );
-}
-
+};
 export default App;

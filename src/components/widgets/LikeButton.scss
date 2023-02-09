@@ -1,0 +1,27 @@
+.like-button {
+  .like,
+  .unlike,
+  .loading {
+    background-color: white;
+    border-radius: 1.5rem;
+    border: 0.2rem solid #888;
+    color: #888;
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .unlike:hover,
+  .like:hover {
+    background-color: white;
+    border-color: #f00;
+    color: #f00;
+  }
+  .like,
+  .loading:hover {
+    background-color: #f00;
+    border-color: #f00;
+    color: white;
+  }
+}

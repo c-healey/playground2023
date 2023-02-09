@@ -1,0 +1,17 @@
+.stars {
+  display: flex;
+  gap: 1rem;
+  &-star {
+    &-icon {
+      --icon-size: 32px;
+      height: var(--icon-size);
+      width: var(--icon-size);
+      cursor: pointer;
+      height: var(--icon-size);
+      width: var(--icon-size);
+      &-filled {
+        fill: yellow;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.bar {
+  border: 1px solid black;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  &-progress {
+    background-color: blue;
+    height: 0.5rem;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition-duration: 2000ms;
+    transition-property: transform;
+    transition-timing-function: linear;
+  }
+  &-active {
+    transform: scaleX(1);
+  }
+}

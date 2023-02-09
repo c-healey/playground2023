@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+}
+.grid-boxes {
+  .container {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+
+    gap: 1rem;
+
+    width: 360px;
+    height: 360px;
+  }
+  .box {
+    border: 1px solid black;
+    border-radius: 0;
+
+    &:nth-child(5) {
+      border: none;
+    }
+    &-clicked {
+      background-color: green;
+    }
+  }
+}

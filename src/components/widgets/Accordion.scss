@@ -1,0 +1,10 @@
+.accordion {
+  width: 100%;
+  padding: 1rem;
+  &-label {
+    border-bottom: 1px solid var(--border-color);
+  }
+  &-content {
+    padding: 1rem 0;
+  }
+}

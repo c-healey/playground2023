@@ -1,0 +1,9 @@
+.text-input {
+  &:valid {
+    background-color: palegreen;
+  }
+
+  &:invalid {
+    background-color: lightpink;
+  }
+}

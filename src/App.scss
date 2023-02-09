@@ -1,0 +1,11 @@
+:root {
+  --border-color: #888;
+  --border-color-hover: darkblue;
+  --background-color: white;
+  --light-grey: #efefef;
+  --size: 20rem;
+}
+body {
+  font-family: sans-serif;
+  background-color: var(--background-color);
+}

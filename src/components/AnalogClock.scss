@@ -1,0 +1,92 @@
+.digital-clock {
+  color: tomato;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.clock {
+  display: block;
+  flex-shrink: 0;
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 100%;
+  border: 1px solid #ccc;
+  transform: rotate(180deg);
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  &-hand {
+    position: absolute;
+    transform-origin: top center;
+
+    background-color: paleturquoise;
+    width: 1px;
+    height: calc(var(--size) / 2);
+    left: calc(var(--size) / 2);
+    top: calc(var(--size) / 2);
+  }
+  & svg {
+    width: 20rem;
+    fill: transparent;
+    stroke: paleturquoise;
+    stroke-width: 1;
+    stroke-linecap: round;
+  }
+}
+
+.ticks {
+  stroke: lightgray;
+  transform: translate(20px, 20px);
+  stroke-width: 0.2;
+}
+.ticks > line:nth-child(1) {
+  /* There are 12 marks, so we rotate by 30deg (12 * 30 = 360) */
+  transform: rotate(30deg);
+}
+.ticks > line:nth-child(2) {
+  transform: rotate(calc(2 * 30deg));
+}
+.ticks > line:nth-child(3) {
+  transform: rotate(calc(3 * 30deg));
+  stroke-width: 0.5;
+}
+.ticks > line:nth-child(4) {
+  transform: rotate(calc(4 * 30deg));
+}
+.ticks > line:nth-child(5) {
+  transform: rotate(calc(5 * 30deg));
+}
+.ticks > line:nth-child(6) {
+  transform: rotate(calc(6 * 30deg));
+  stroke-width: 0.5;
+}
+.ticks > line:nth-child(7) {
+  transform: rotate(calc(7 * 30deg));
+}
+.ticks > line:nth-child(8) {
+  transform: rotate(calc(8 * 30deg));
+}
+.ticks > line:nth-child(9) {
+  transform: rotate(calc(9 * 30deg));
+  stroke-width: 0.5;
+}
+.ticks > line:nth-child(10) {
+  transform: rotate(calc(10 * 30deg));
+}
+.ticks > line:nth-child(11) {
+  transform: rotate(calc(11 * 30deg));
+}
+.ticks > line:nth-child(12) {
+  transform: rotate(calc(12 * 30deg));
+  stroke-width: 0.5;
+}
+.pin {
+  fill: paleturquoise;
+  stroke: paleturquoise;
+  stroke-width: 0.2;
+}

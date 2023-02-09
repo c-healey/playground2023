@@ -1,0 +1,12 @@
+button {
+  border: 2px solid var(--border-color);
+  border-radius: 1.5rem;
+  background-color: var(--background-color);
+  font-weight: 700;
+  // max-width: 5rem;
+  // min-width: 4rem;
+  padding: 0.25rem;
+  &:hover {
+    border-color: var(--border-color-hover);
+  }
+}

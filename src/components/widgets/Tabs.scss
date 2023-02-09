@@ -1,0 +1,16 @@
+.tabs {
+  &-wrapper {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+  &-tab {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.125rem 0.25rem;
+    &-active {
+      //   background-color: black;
+      //   color: white;
+      border-bottom: 3px solid var(--border-color);
+    }
+  }
+}
