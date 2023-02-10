@@ -4,7 +4,7 @@ import "./App.scss";
 import "./Themes/buffer/styles.scss";
 import Greatfrontend from "./components/Pages/greatfrontend";
 import { Route, Routes } from "react-router";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import Carousel from "./components/Carousel/Carousel";
 const App = () => {
   return (

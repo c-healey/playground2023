@@ -3,8 +3,18 @@
   padding: 1rem;
   &-label {
     border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    & svg {
+      transition: all 0.5s linear;
+      &.down {
+        transform: rotate(180deg);
+      }
+    }
   }
   &-content {
-    padding: 1rem 0;
+    padding: 1rem;
   }
 }

@@ -135,12 +135,13 @@ Handlers
         ).style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
       });
     }
-    if (!isDown) return;
-    const x = e.clientX || (e.touches && e.touches[0].clientX) || 0;
-    const xStart = startX;
-    const mouseProgress = (x - xStart) * speedDrag;
-    setStartX(x);
-    setProgress(progress + mouseProgress);
+    if (isDown) {
+      const x = e.clientX || (e.touches && e.touches[0].clientX) || 0;
+      const xStart = startX;
+      const mouseProgress = (x - xStart) * speedDrag;
+      setStartX(x);
+      setProgress(progress + mouseProgress);
+    }
   };
 
   const handleMouseDown = (e: any) => {
