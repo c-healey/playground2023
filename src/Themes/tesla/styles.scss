@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+.tesla {
+  --tds-animation-bezier-base: cubic-bezier(0.5, 0, 0, 0.75);
+  --tds-ui-opacity-100: 1;
+  --tds-ui-opacity-70: 0.7;
+  --tds-ui-opacity-50: 0.5;
+  --tds-ui-opacity-30: 0.3;
+  --tds-ui-opacity-0: 0;
+  --tds-ui-box-shadow-off: 0 0 0 0 transparent;
+  --tds-component-pill-padding-inline: 20px;
+  --tds-size-half: 4px;
+  --tds-size-base: 8px;
+  --tds-size-9x: 72px;
+  --tds-size-8x: 64px;
+  --tds-size-7x: 56px;
+  --tds-size-6x: 48px;
+  --tds-size-5x: 40px;
+  --tds-size-4x: 32px;
+  --tds-size-3x: 24px;
+  --tds-size-2x: 16px;
+  --tds-size-13x: 104px;
+  --tds-size-12x: 96px;
+  --tds-size-11x: 88px;
+  --tds-size-10x: 80px;
+  --tds-font-weight-xlight: 200;
+  --tds-font-weight-medium: 500;
+  --tds-font-weight-light: 300;
+  --tds-font-weight-book: 400;
+  --tds-font-weight-bold: 700;
+  --tds-font-size-75: 34px;
+  --tds-font-size-70: 28px;
+  --tds-font-size-55: 23px;
+  --tds-font-size-50: 20px;
+  --tds-font-size-40: 17px;
+  --tds-font-size-30: 14px;
+  --tds-font-size-20: 12px;
+  --tds-font-size-10: 10px;
+  --tds-font-line-height-unitless: 1.414;
+  --tds-font-line-height-75: 45px;
+  --tds-font-line-height-70: 36px;
+  --tds-font-line-height-60: 28px;
+  --tds-font-line-height-40: 23px;
+  --tds-font-line-height-30: 21px;
+  --tds-font-line-height-20: 20px;
+  --tds-font-line-height-10: 18px;
+  --tds-font-family-thai: "Noto Sans Thai";
+  --tds-font-family-monospace: "Fira Code", SFMono-Regular, Consolas,
+    "Liberation Mono", Menlo, monospace;
+  --tds-font-family-latin-alt: "Universal Sans";
+  --tds-font-family-latin: "Gotham SSm";
+  --tds-font-family-korean: "FB New Gothic";
+  --tds-font-family-japanese: "AXIS Font Japanese W55", "Hiragino Sans";
+  --tds-font-family-hebrew: "Noto Sans Hebrew";
+  --tds-font-family-chinese-traditional: "PingFang TC", "Microsoft YaHei";
+  --tds-font-family-chinese-simplified: "PingFang SC", "Microsoft YaHei";
+  --tds-font-family-chinese-hk: "PingFang HK", "Microsoft YaHei";
+  --tds-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --tds-font-family-arabic: "Noto Sans Arabic";
+  --tds-color-yellow: #fbb01b;
+  --tds-color-white: #fff;
+  --tds-color-red-20: #ed4e3b;
+  --tds-color-red-10: #b74134;
+  --tds-color-grey-70: #f4f4f4;
+  --tds-color-grey-65: #eee;
+  --tds-color-grey-60: #e2e3e3;
+  --tds-color-grey-50: #d0d1d2;
+  --tds-color-grey-45: #bbb;
+  --tds-color-grey-40: #a2a3a5;
+  --tds-color-grey-35: #8e8e8e;
+  --tds-color-grey-30: #5c5e62;
+  --tds-color-grey-25: #444;
+  --tds-color-grey-20: #393c41;
+  --tds-color-grey-15: #222;
+  --tds-color-grey-10: #171a20;
+  --tds-color-green: #12bb00;
+  --tds-color-blue-40: #3368ff;
+  --tds-color-blue-30: #3e6ae1;
+  --tds-color-blue-20: #3457b1;
+  --tds-color-black: #000;
+  --tds-border-width-small: 1px;
+  --tds-border-width-medium: 2px;
+  --tds-border-width-large: 3px;
+  --tds-border-width-hairline: 0.5px;
+  --tds-border-style: solid;
+  --tds-border-radius-outline-only: 0.001px;
+  --tds-border-radius-form-item: 20px;
+  --tds-border-radius-circle: 100%;
+  --tds-ui-box-shadow-small: 0 var(--tds-size-half) var(--tds-size-base) 0
+    rgba(0, 0, 0, 0.08);
+  --tds-ui-box-shadow-medium: 0 var(--tds-size-base) var(--tds-size-2x) 0
+    rgba(0, 0, 0, 0.12);
+  --tds-ui-box-shadow-large-reverse: 0 -8px var(--tds-size-2x) 0 rgba(0, 0, 0, 0.16);
+  --tds-ui-box-shadow-large: 0 var(--tds-size-base) var(--tds-size-2x) 0
+    rgba(0, 0, 0, 0.16);
+  --tds-component-pill-padding-block: var(--tds-size-2x);
+  --tds-component-pill-height: var(--tds-size-5x);
+  --tds-component-card-padding: var(--tds-size-2x);
+  --tds-size-1x: var(--tds-size-base);
+  --tds-font-size-80: var(--tds-size-5x);
+  --tds-font-size-60: var(--tds-size-3x);
+  --tds-font-line-height-80: var(--tds-size-6x);
+  --tds-font-line-height-50: var(--tds-size-3x);
+  --tds-font-family-combined: var(--tds-font-family-latin),
+    var(--tds-font-family-base);
+  --tds-border-radius-pill: var(--tds-size-4x);
+  --tds-border-radius-card: var(--tds-size-base);
+  --tds-border-radius-base: var(--tds-size-half);
+  --tds-theme-background-container-alt-highlight: rgba(0, 0, 0, 0.075);
+  --tds-theme-background-container-alt: rgba(0, 0, 0, 0.05);
+  --tds-theme-secondary-warning: var(--tds-color-yellow);
+  --tds-theme-secondary-positive: var(--tds-color-green);
+  --tds-theme-secondary-negative: var(--tds-color-red-10);
+  --tds-theme-primary-highlight: var(--tds-color-blue-20);
+  --tds-theme-primary: var(--tds-color-blue-30);
+  --tds-theme-foreground-primary: var(--tds-color-blue-30);
+  --tds-theme-foreground-on-primary: var(--tds-color-white);
+  --tds-theme-foreground-low-contrast: var(--tds-color-grey-30);
+  --tds-theme-foreground-inverse: var(--tds-color-black);
+  --tds-theme-foreground-high-contrast: var(--tds-color-grey-10);
+  --tds-theme-foreground: var(--tds-color-grey-20);
+  --tds-theme-border-low-contrast: var(--tds-color-grey-60);
+  --tds-theme-border: var(--tds-color-grey-50);
+  --tds-theme-background-dialog: var(--tds-color-white);
+  --tds-theme-background: var(--tds-color-white);
+  --tds-theme-background-container-highlight: var(--tds-color-grey-65);
+  --tds-theme-background-container: var(--tds-color-grey-70);
+
+  --icon-size: 48px;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: var(--tds-color-whiter);
+  color: var(--tds-color-grey-10);
+  font-family: "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    line-height: 3rem;
+  }
+  h2,
+  h3 {
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  h4,
+  h4,
+  h6 {
+    margin: 0 0 1rem 0;
+  }
+  p {
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    padding: 6px 24px 14px 24px;
+  }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  ol,
+  ul {
+    margin: 0.125rem 1rem 2rem 2.125rem;
+    & li {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .List--style-none {
+    list-style: none;
+  }
+  .List--margin-bottom-0 {
+    margin-bottom: 0;
+  }
+  p {
+    margin: 1rem 0;
+  }
+  .Paragraph {
+    &--order-first {
+      margin-top: 0;
+    }
+    &--order-last {
+      margin-bottom: 0;
+    }
+  }
+  .accordion {
+    &-label {
+      border-bottom: 1px solid var(--outer-space);
+      & svg {
+        stroke: var(--tory-blue);
+      }
+    }
+  }
+  section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: aliceblue;
+    &::before {
+      content: " ";
+      background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/a269d7b4-87a9-4057-9ac5-2565e56a188e/bvlatuR/std/4096x2560/Homepage-Model-3-Desktop-LHD?quality=auto-medium&amp;format=auto")
+        no-repeat center center/cover;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  .Button {
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(23, 26, 32, 0.8);
+    backdrop-filter: blur(8px);
+
+    block-size: 40px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-width: 264px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    grid-column: 1;
+    grid-row: 1;
+
+    padding: 0.25rem 1rem;
+    &:hover {
+      background-color: rgba(23, 26, 32, 0.8);
+      border-color: white;
+    }
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(23, 26, 32, 0.8), inset 0 0 0 2px #fff;
+    }
+    &-secondary {
+      grid-column: 2;
+    }
+
+    &-secondary,
+    &-secondary:hover {
+      background-color: rgba(244, 244, 244, 0.65);
+      color: var(--tds-color-grey-10);
+    }
+    &-secondary:focus {
+      box-shadow: 0 0 0 3px rgba(244, 244, 244, 0.65),
+        inset 0 0 0 2px rgba(23, 26, 32, 0.8);
+    }
+    &-box {
+      svg {
+        stroke: var(--tds-color-grey-30);
+      }
+
+      padding: 1rem;
+      position: absolute;
+      bottom: 4rem;
+
+      &-1 {
+        animation: fade1 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
+        // animation: slideup 1s linear;
+      }
+      &-2 {
+        animation: fade2 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
+      }
+      &-3 {
+        animation: fade3 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+  .Card {
+    padding: 1rem;
+    border: 1px solid var(--nevada);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    &--double-padding {
+      padding: 2rem;
+    }
+    &--empty {
+      border: 1px dashed var(--nevada);
+    }
+    &--no-border {
+      border: none;
+    }
+    &--no-padding {
+      padding: 0;
+    }
+    &-header {
+      background-color: var(--aqua-haze);
+      border: none;
+      border-bottom: 1px solid var(--geyser);
+    }
+  }
+}
+@keyframes fade1 {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  15% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+    // transform: translateY(-4rem);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-3rem);
+  }
+  60% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slideup {
+  0% {
+    transform: translateY(4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

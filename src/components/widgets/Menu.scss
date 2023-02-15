@@ -1,0 +1,54 @@
+.menu {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  //   &-brand {
+  //     min-width: 25%;
+  //   }
+  &-items,
+  &-always {
+    display: none;
+
+    gap: 0.125rem;
+    justify-self: center;
+  }
+  @media (min-width: 768px) {
+    &-items,
+    &-always {
+      display: flex;
+    }
+  }
+  &-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 500;
+  }
+  &-mobile {
+    border: 1px solid lightgray;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem;
+    z-index: 99;
+    background-color: white;
+  }
+  a {
+    text-decoration: none;
+  }
+  &-item,
+  &-button {
+    color: black;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+    &:hover {
+      background-color: lightgray;
+    }
+  }
+}
